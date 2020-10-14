@@ -14,6 +14,8 @@ void gameover(){
   text("High Score:" + highscore, 400,500);
   
   //exit button
+  exittactile(735,510,45,80);
+  rect(735,510,45,80,5);
   image(exit,700,500,100,100);
   
 }
@@ -23,7 +25,7 @@ void gameover(){
 void gameoverClicks(){
   reset();
   mode = intro;
-  if (mouseX > 700 && mouseX < 800 && mouseY > 500 && mouseY < 600){
+  if (mouseX > 735 && mouseX < 790 && mouseY > 510 && mouseY < 590){
     exit();
   }
 }

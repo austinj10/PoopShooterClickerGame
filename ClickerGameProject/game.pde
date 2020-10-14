@@ -9,10 +9,10 @@ void game(){
   text("Score:" + score, 100,25);
   text("Lives:" + lives, 700,25);
   
-//pause button(**MAKE IT TACTILE**) 
+//pause button
   //invisible tactile button
   strokeWeight(0);
-  fill(#DDCAAA);
+  pausetactile(25,520,55,55);
   rect(25,520,55,55,5);
   //two rects
   fill(255);
@@ -28,10 +28,10 @@ void game(){
   y = y + vy;
 
 //bouncing
-  if ( x < 0 || x > 700){ //|| is above enter key
+  if ( x < 0 || x > width-poopthickness){ 
     vx = vx * -1; 
   }
-  if (y < 0 || y > 500){
+  if (y < 0 || y > height-poopthickness){
     vy = vy * -1;
   }
 }
@@ -39,6 +39,7 @@ void game(){
 
  
 void gameClicks(){
+  //change if i have time later
   if (dist(mouseX,mouseY,x-50 + poopthickness,y-50 + poopthickness) < poopthickness - 50){
     vx = vx * 1.05;
     vy = vy * 1.05;

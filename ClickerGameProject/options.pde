@@ -5,7 +5,7 @@ void options(){
   fill(255);
   textFont(entreaty);
   textSize(110);
-  text("Options",400,75);
+  text("Options",325,75);
   
   //back
   pushMatrix();
@@ -38,6 +38,8 @@ void options(){
   poop3tactile(550,200,150,150);
   rect(550,200,150,150);
   image(poop3,550,200,150,150);
+  
+  OptionspoopOnOff();
 }
 
 

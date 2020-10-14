@@ -26,3 +26,4 @@ void pauseClicks(){
     mode = game;
   }
 } 
+  

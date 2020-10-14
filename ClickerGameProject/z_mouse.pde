@@ -49,5 +49,18 @@ void poopOnOff(){
   }
 }
 
-    
-    
+void OptionspoopOnOff(){
+  if (poopOn == true){
+   image(poop,600,0,poopthickness,poopthickness);
+   poop2On = false;
+   poop3On = false;
+  } else if (poop2On == true){
+    image(poop2,600,0,poopthickness,poopthickness);
+    poopOn = false;
+    poop3On = false;
+  } else if (poop3On == true){
+    image(poop3,600,0,poopthickness,poopthickness);
+    poopOn = false;
+    poop2On = false;
+  }
+}
